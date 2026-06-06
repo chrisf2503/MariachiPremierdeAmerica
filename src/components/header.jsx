@@ -4,9 +4,9 @@ import FacebookIcon from '../assets/Facebook.svg'
 import PhoneIcon from '../assets/Phone.svg'
 import headerStyle from '../CSS/header.module.css'
 const socialMedia = [
-    {id: "facebook", img: {FacebookIcon}, link: ""},
-    {id: "instagram", img: {instagramIcon}, link: ""},
-    {id: "phone", img: {PhoneIcon}, link: ""},
+    {id: "instagram", img: instagramIcon, link: ""},
+    {id: "facebook", img: FacebookIcon, link: ""},
+    {id: "phone", img: PhoneIcon, link: ""},
 ]
 function Header(){
     return (
@@ -14,9 +14,13 @@ function Header(){
             <img src={logo} alt="MairachiPremierdeAmericaLogo" className ={headerStyle.logo}/>
             <h1 className={headerStyle.title}>Mariachi Premier de America</h1>
             <p className={headerStyle.discription}>Música Auténtica de Mariachi Mexicano para Tus Eventos Especiales</p>
-            <div className="socials">
+            <div className={headerStyle.socials}>
                 {//adding loop here
-                }
+                socialMedia.map(list => (
+                    <a href={list.link}>
+                        <img src={list.img} alt={list.id} />
+                    </a>
+                ))}
             </div>
         </header>
     )

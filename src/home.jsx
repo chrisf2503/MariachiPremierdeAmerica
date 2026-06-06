@@ -1,4 +1,5 @@
 import Header from './components/header.jsx'
+import History from './components/history.jsx'
 function Home(){
 
     return (
@@ -12,7 +13,8 @@ function Home(){
                 Form 
                 Footer 
             */}
-           <Header/>
+            <Header/>
+            <History/>
         </main>
     )
 }
