@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:ital,wght@0,400;0,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&display=swap');
+body {
+  	margin: 0; line-height: normal;
+}
+:root {
+  	
+  	/* Common Style Variables */
+  	
+  	/* Color */
+  	--color-black: #000;
+  	--color-cornsilk: #fffae2;
+  	--color-floralwhite: #fdf9f1;
+  	--color-khaki: #e6dd73;
+  	--color-linen: #f4efe3;
+  	--color-maroon: rgba(90, 15, 27, 0.81);
+  	--color-snow: #fcfbf7;
+  	--color-white: #fff;
+  	
+  	/* Padding */
+  	--padding-0: 0px;
+  	--padding-10: 10px;
+  	--padding-11: 11px;
+  	--padding-13: 13px;
+  	--padding-19: 19px;
+  	
+  	/* BorderRadius */
+  	--br-0: 0px;
+  	--br-8: 8px;
+  	--br-15: 15px;
+  	
+  	/* Font */
+  	--font-cinzel: Cinzel, Arial, sans-serif;
+  	--font-inter: Inter, Arial, sans-serif;
+  	/* --font-heading: 'Cinzel', serif; */
+	--font-body: 'Lato', sans-serif;
+  	/* FontSize */
+  	--fs-20: 20px;
+  	--fs-24: 24px;
+  	--fs-32: 32px;
+  	--fs-48: 48px;
+  	
+  	/* Borders */
+  	--border-1: 1px solid var(--color-khaki);
+  	
+  	/* WidthHeights */
+  	--width-389: 389px;
+  	
+  	
+  	--left-0: 0px;
+  	
+}
+
