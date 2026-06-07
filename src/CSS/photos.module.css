@@ -1,0 +1,51 @@
+.photo_section{
+    width: 100%;
+    position: relative;
+    background-color: var(--color-linen);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    text-align: center;
+    font-size: 48px;
+    color: var(--color-black);
+    font-family: var(--font-cinzel);
+}
+.caption{
+    align-self: stretch;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 18px 391px;
+}
+.title{
+    margin: unset;
+    align-self: stretch;
+    position: relative;
+    flex-shrink: 0;
+}
+.discription{
+    width: 752px;
+    position: relative;
+    font-size: 24px;
+    text-align: left;
+    display: inline-block;
+    flex-shrink: 0;
+}
+.photo_container{
+
+    align-self: stretch;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 57px 72px;
+    gap: 70px;
+}
+.photo{
+    height: 426px;
+    width: 100%;
+    position: relative;
+    object-fit: cover;
+}

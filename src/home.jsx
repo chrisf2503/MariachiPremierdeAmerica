@@ -1,6 +1,7 @@
 import Header from './components/header.jsx'
 import History from './components/history.jsx'
 import Videos from './components/videos.jsx'
+import Photos from './components/photos.jsx'
 function Home(){
 
     return (
@@ -17,6 +18,7 @@ function Home(){
             <Header/>
             <History/>
             <Videos/>
+            <Photos/>
         </main>
     )
 }

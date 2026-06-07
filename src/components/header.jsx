@@ -3,10 +3,11 @@ import instagramIcon from '../assets/Instagram.svg'
 import FacebookIcon from '../assets/Facebook.svg'
 import PhoneIcon from '../assets/Phone.svg'
 import headerStyle from '../CSS/header.module.css'
+
 const socialMedia = [
-    {id: "instagram", img: instagramIcon, link: ""},
-    {id: "facebook", img: FacebookIcon, link: ""},
-    {id: "phone", img: PhoneIcon, link: ""},
+    {id: "instagram", img: instagramIcon, link: "https://www.instagram.com/mariachipremierdeamerica/"},
+    {id: "facebook", img: FacebookIcon, link: "https://www.facebook.com/mariachipremierNYNJ"},
+    {id: "phone", img: PhoneIcon, link: "tel:+13473038254"},
 ]
 function Header(){
     return (
