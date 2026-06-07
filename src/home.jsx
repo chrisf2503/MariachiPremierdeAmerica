@@ -3,6 +3,7 @@ import History from './components/history.jsx'
 import Videos from './components/videos.jsx'
 import Photos from './components/photos.jsx'
 import Footer from './components/footer.jsx'
+import Form from './components/form.jsx'
 function Home(){
 
     return (
@@ -20,7 +21,7 @@ function Home(){
             <History/>
             <Videos/>
             <Photos/>
-
+            <Form/>
             <Footer/>
         </main>
     )
