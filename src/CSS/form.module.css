@@ -1,10 +1,9 @@
 .formContainer {
 	width: 100%;
-    height: 738px;
-	padding: 25px 20px;
+	padding: clamp(36px, 6vw, 64px) 20px;
 	box-sizing: border-box;
 	display: flex;
-    align-items: center;
+	align-items: center;
 	justify-content: center;
 	color: var(--color-black);
 	font-family: var(--font-cinzel);
@@ -12,7 +11,7 @@
 
 .form {
 	width: min(100%, 652px);
-	padding: 24px 19px;
+	padding: clamp(20px, 4vw, 32px);
 	border-radius: 8px;
 	box-sizing: border-box;
 	background-color: var(--color-white);
@@ -54,7 +53,7 @@
 }
 
 .input {
-	height: 60px;
+	min-height: 54px;
 	padding: 10px 16px;
 }
 
@@ -116,7 +115,7 @@
 	}
 
 	.form {
-		padding-inline: 14px;
+		padding: 20px 14px;
 	}
 
 	.label {

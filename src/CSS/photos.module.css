@@ -1,51 +1,73 @@
-.photo_section{
-    width: 100%;
-    position: relative;
-    background-color: var(--color-linen);
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 8px;
-    text-align: center;
-    font-size: 48px;
-    color: var(--color-black);
-    font-family: var(--font-cinzel);
+.photo_section {
+	width: 100%;
+	padding: clamp(36px, 6vw, 64px) clamp(16px, 5vw, 72px);
+	background-color: var(--color-linen);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: clamp(28px, 5vw, 52px);
+	color: var(--color-black);
+	font-family: var(--font-cinzel);
+	text-align: center;
 }
-.caption{
-    align-self: stretch;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 18px 391px;
-}
-.title{
-    margin: unset;
-    align-self: stretch;
-    position: relative;
-    flex-shrink: 0;
-}
-.discription{
-    width: 752px;
-    position: relative;
-    font-size: 24px;
-    text-align: left;
-    display: inline-block;
-    flex-shrink: 0;
-}
-.photo_container{
 
-    align-self: stretch;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    padding: 57px 72px;
-    gap: 70px;
+.caption {
+	width: min(100%, 850px);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 12px;
 }
-.photo{
-    height: 426px;
-    width: 100%;
-    position: relative;
-    object-fit: cover;
+
+.title {
+	margin: 0;
+	font-size: clamp(32px, 5vw, 48px);
+	font-weight: 400;
+	line-height: 1.2;
+	text-wrap: balance;
+}
+
+.discription {
+	margin: 0;
+	font-size: clamp(17px, 2.2vw, 24px);
+	line-height: 1.5;
+	text-align: center;
+	text-wrap: balance;
+}
+
+.photo_container {
+	width: 100%;
+	max-width: 1400px;
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: clamp(20px, 4vw, 52px);
+}
+
+.photo {
+	width: 100%;
+	aspect-ratio: 4 / 3;
+	border-radius: var(--br-8);
+	background-color: var(--color-snow);
+	object-fit: cover;
+}
+
+@media (max-width: 900px) {
+	.photo_container {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+}
+
+@media (max-width: 600px) {
+	.photo_container {
+		display: flex;
+
+        overflow-x: auto;
+
+        scroll-snap-type: x mandatory;
+	}
+
+	.photo {
+		width: min(100%, 440px);
+		justify-self: center;
+	}
 }

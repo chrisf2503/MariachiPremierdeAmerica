@@ -1,32 +1,37 @@
 .briefHistory {
-    width: 100%;
-    position: relative;
-    background-color: var(--color-linen);
-    overflow: hidden;
-    flex-shrink: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    font-size: 48px;
-    color: var(--color-black);
-    font-family: var(--font-cinzel);
+	width: 100%;
+	padding: clamp(36px, 6vw, 64px) clamp(20px, 6vw, 72px);
+	background-color: var(--color-linen);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 18px;
+	color: var(--color-black);
+	font-family: var(--font-cinzel);
+	text-align: center;
 }
-.subtitle{
-    position: relative;
-    font-size: 48px;
-    font-family: var(--font-cinzel);
-    color: var(--color-black);
-    text-align: center;
-    margin: 15px 0px;
+
+.subtitle {
+	margin: 0;
+	font-size: clamp(32px, 5vw, 48px);
+	font-weight: 400;
+	line-height: 1.2;
+	text-wrap: balance;
 }
-.history{
-    height: 169px;
-    width: 1293px;
-    position: relative;
-    font-size: 24px;
-    font-family: var(--font-cinzel);
-    color: var(--color-black);
-    text-align: center;
-    display: inline-block;
+
+.history {
+	width: min(100%, 1100px);
+	margin: 0;
+	font-size: clamp(17px, 2.2vw, 24px);
+	line-height: 1.65;
+}
+
+@media (max-width: 480px) {
+	.briefHistory {
+		padding-inline: 16px;
+	}
+
+	.history {
+		text-align: left;
+	}
 }

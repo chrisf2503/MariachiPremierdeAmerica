@@ -12,13 +12,13 @@ const socialMedia = [
 function Header(){
     return (
         <header className={headerStyle.header}>
-            <img src={logo} alt="MairachiPremierdeAmericaLogo" className ={headerStyle.logo}/>
+            <img src={logo} alt="Mariachi Premier de America" className={headerStyle.logo}/>
             <h1 className={headerStyle.title}>Mariachi Premier de America</h1>
             <p className={headerStyle.discription}>Música Auténtica de Mariachi Mexicano para Tus Eventos Especiales</p>
             <div className={headerStyle.socials}>
                 {//adding loop here
                 socialMedia.map(list => (
-                    <a href={list.link}>
+                    <a href={list.link} key={list.id} aria-label={list.id}>
                         <img src={list.img} alt={list.id} />
                     </a>
                 ))}

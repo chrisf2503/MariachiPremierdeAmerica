@@ -1,9 +1,11 @@
 import photoStyle from '../CSS/photos.module.css';
-
+import photo1 from '../media/performance1.png'
+import photo2 from '../media/performance2.png'
+import photo3 from '../media/performance3.png'
 const photo = [
-    {id: "", path: "", name:"Photo1"},
-    {id: "", path: "", name:"Photo2"},
-    {id: "", path: "", name:"photo3"}
+    {id: "", path: photo1 , name:"Photo1"},
+    {id: "", path: photo2, name:"Photo2"},
+    {id: "", path: photo3, name:"photo3"}
 ]
 
 function Photos(){
@@ -16,7 +18,13 @@ function Photos(){
             <div className={photoStyle.photo_container}>
                 {
                     photo.map(list => (
-                        <img src={list.path} alt={list.name} className={photoStyle.photo}/>
+                        <img
+                            src={list.path}
+                            alt={list.name}
+                            className={photoStyle.photo}
+                            key={list.name}
+                            loading="lazy"
+                        />
                         
                     ))
                 }
